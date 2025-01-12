@@ -11,13 +11,7 @@ export default async function Home() {
         {
           products.data.search.products.map(async (product: Product, index) => {
             const imageUrl = product.image ?? product.imageSrc;
-            console.log(imageUrl)
-
-            //const response = await fetch(imageUrl, { method: 'HEAD' }).then((response) => {
-            //  console.log(response)
-            //});
-            //const imageBlob = await response.blob();
-            //const imageObjectUrl = URL.createObjectURL(imageBlob);
+            const response = await fetch(imageUrl);
 
             return (
               <div key={ index } className="product relative border border-[#E6E6E6] px-[1.5rem] py-[2rem]">
@@ -25,7 +19,6 @@ export default async function Home() {
                   product.tag && <div className="tag w-[60px] rounded-br-lg uppercase text-center absolute left-0 top-0 bg-green-100">{ product.tag }</div>
                 }
                 <div className="header flex flex-col">
-                  
                   <div className="uppercase mt-5">{ product.name }</div>
                   <div>{ product.description }</div>
                 </div>
@@ -33,7 +26,7 @@ export default async function Home() {
                   <div className="flex justify-center my-8">
                     <Image
                       className="dark:invert"
-                      src={ "https://res.cloudinary.com/dr4lzclmb/image/upload/v1721952669/cld-sample-3.jpg" }
+                      src={ product.image ?? product.imageSrc }
                       alt="Vercel logomark"
                       width={200}
                       height={200}
