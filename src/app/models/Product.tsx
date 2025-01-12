@@ -4,8 +4,6 @@ import { PointsPrice } from './PointsPrice';
 export type Product = {
   name: string,
   description: string,
-  image?: string,
-  imageSrc?: string,
   tag: string | null,
   wasPrice?: {
     cashPrice: CashPrice,
@@ -15,4 +13,7 @@ export type Product = {
     cashPrice: CashPrice,
     pointsPrice: PointsPrice,
   },
-}
+} & (
+  | { image: string; imageSrc?: never }
+  | { imageSrc: string; image?: never }
+)
