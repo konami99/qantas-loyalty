@@ -2,8 +2,6 @@
 
 import { Product } from "./models/Product";
 import { NetworkService } from "./services/NetworkService";
-import { CurrencySymbolConverter } from "./services/CurrencySymbolConverter";
-import { StringHelper } from "./services/StringHelper";
 import ProductModal from "./modals/ProductModal";
 
 export default async function Home() {
