@@ -1,5 +1,7 @@
 import { Product } from "./models/Product";
 import { NetworkService } from "./services/NetworkService";
+import { CurrencySymbolConverter } from "./services/CurrencySymbolConverter";
+import { StringHelper } from "./services/StringHelper";
 import Image from "next/image";
 
 export default async function Home() {
@@ -20,7 +22,7 @@ export default async function Home() {
                 }
                 <div className="header flex flex-col">
                   <div className="uppercase mt-5">{ product.name }</div>
-                  <div>{ product.description }</div>
+                  <div>{ StringHelper.truncate(product.description) }</div>
                 </div>
                 <div className="body flex flex-col justify-center">
                   <div className="flex justify-center my-8">
@@ -34,15 +36,15 @@ export default async function Home() {
                   </div>
                   {
                     product.wasPrice &&
-                    <div className="wasPrice"><s>{ product.wasPrice.cashPrice.currencyCode } { product.wasPrice.cashPrice.amount }</s></div>
+                    <div className="wasPrice"><s>{ CurrencySymbolConverter.convert(product.wasPrice.cashPrice.currencyCode) } { product.wasPrice.cashPrice.amount }</s></div>
                   }
                   {
                     product.wasPrice &&
-                    <div className="currentPrice"><span className="text-red-600">{ product.currentPrice.cashPrice.currencyCode } { product.currentPrice.cashPrice.amount }</span></div>
+                    <div className="currentPrice"><span className="text-red-600">{ CurrencySymbolConverter.convert(product.currentPrice.cashPrice.currencyCode) } { product.currentPrice.cashPrice.amount }</span></div>
                   }
                   {
                     !product.wasPrice &&
-                    <div className="currentPrice">{ product.currentPrice.cashPrice.currencyCode } { product.currentPrice.cashPrice.amount }</div>
+                    <div className="currentPrice">{ CurrencySymbolConverter.convert(product.currentPrice.cashPrice.currencyCode) } { product.currentPrice.cashPrice.amount }</div>
                   }
                 </div>
                 <div className="footer flex sm:flex-row flex-col mt-6">
@@ -54,7 +56,7 @@ export default async function Home() {
                     }
                   </div>
                   <div className="addToBasket sm:w-1/2 w-full">
-                    <div className="bg-red-600 text-white h-full rounded-md flex items-center justify-center h-20 sm:h-12">ADD</div>
+                    <div className="bg-red-600 text-white h-full rounded-md flex items-center justify-center h-24 sm:h-12">ADD</div>
                   </div>
                 </div>
               </div>
