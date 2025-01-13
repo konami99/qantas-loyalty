@@ -33,6 +33,21 @@ export class NetworkService {
               }
             },
             {
+              "name": "Royal Salute",
+              "description": "Royal Salute 21 Year Old Blended Scotch Whisky Miami Polo Edition 700ml (Gift Box)",
+              "imageSrc": "https://picsum.photos/seed/picsum/200/300",
+              "tag": null,
+              "currentPrice": {
+                "cashPrice": {
+                  "currencyCode": "AUD",
+                  "amount": 399
+                },
+                "pointsPrice": {
+                  "amount": 79800
+                }
+              }
+            },
+            {
               "name": "Houraisen",
               "description": "Houraisen Beshi Tokubetsu Junmai Sake 720ml",
               "image": "https://picsum.photos/seed/picsum/200/300",
@@ -53,21 +68,6 @@ export class NetworkService {
                 },
                 "pointsPrice": {
                   "amount": 19900
-                }
-              }
-            },
-            {
-              "name": "Royal Salute",
-              "description": "Royal Salute 21 Year Old Blended Scotch Whisky Miami Polo Edition 700ml (Gift Box)",
-              "imageSrc": "https://picsum.photos/seed/picsum/200/300",
-              "tag": null,
-              "currentPrice": {
-                "cashPrice": {
-                  "currencyCode": "AUD",
-                  "amount": 399
-                },
-                "pointsPrice": {
-                  "amount": 79800
                 }
               }
             },

@@ -16,7 +16,7 @@ export default async function Home() {
             const response = await fetch(imageUrl);
 
             return (
-              <div key={ index } className="product relative border border-[#E6E6E6] px-[1.5rem] py-[2rem]">
+              <div key={ index } className="product relative border border-[#E6E6E6] px-[1.5rem] py-[2rem] bg-slate-50">
                 {
                   product.tag && <div className="tag w-[60px] rounded-br-lg uppercase text-center absolute left-0 top-0 bg-green-100">{ product.tag }</div>
                 }
@@ -37,6 +37,10 @@ export default async function Home() {
                   {
                     product.wasPrice &&
                     <div className="wasPrice"><s>{ CurrencySymbolConverter.convert(product.wasPrice.cashPrice.currencyCode) } { product.wasPrice.cashPrice.amount }</s></div>
+                  }
+                  {
+                    !product.wasPrice &&
+                    <div className="wasPrice">&nbsp;</div>
                   }
                   {
                     product.wasPrice &&
