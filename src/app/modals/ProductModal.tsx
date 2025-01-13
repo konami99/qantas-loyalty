@@ -49,7 +49,7 @@ export default function ProductModal(product: Product, index: number) {
           }
         </div>
         <div className="addToBasket sm:w-1/2 w-full">
-          <div className="bg-red-600 text-white h-full rounded-md flex items-center justify-center h-24 sm:h-12">ADD</div>
+          <div className="bg-red-600 text-white rounded-md flex items-center justify-center h-16 sm:h-12">ADD</div>
         </div>
       </div>
     </div>
