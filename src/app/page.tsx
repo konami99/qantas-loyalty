@@ -29,7 +29,7 @@ export default async function Home() {
                     <Image
                       className="dark:invert"
                       src={ product.image ?? product.imageSrc }
-                      alt="Vercel logomark"
+                      alt="image"
                       width={200}
                       height={200}
                     />
