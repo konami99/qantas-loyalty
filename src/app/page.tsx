@@ -1,3 +1,5 @@
+'use server'
+
 import { Product } from "./models/Product";
 import { NetworkService } from "./services/NetworkService";
 import { CurrencySymbolConverter } from "./services/CurrencySymbolConverter";
@@ -5,16 +7,13 @@ import { StringHelper } from "./services/StringHelper";
 import Image from "next/image";
 
 export default async function Home() {
-  const products = await NetworkService.getProducts("https://api.qantas.com");
+  const products = await NetworkService.getProducts();
 
   return (
     <section>
       <div className="grid auto-rows-[1fr] grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] gap-[1em] grid-flow-row-dense p-8">
         {
           products.data.search.products.map(async (product: Product, index) => {
-            const imageUrl = product.image ?? product.imageSrc;
-            const response = await fetch(imageUrl);
-
             return (
               <div key={ index } className="product relative border border-[#E6E6E6] px-[1.5rem] py-[2rem] bg-slate-50">
                 {

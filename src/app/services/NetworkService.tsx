@@ -2,7 +2,7 @@ import { ProductDetails } from "../models/ProductDetails";
 
 export class NetworkService {
 
-  static async getProducts(url: string): Promise<ProductDetails> {
+  static async getProducts(): Promise<ProductDetails> {
     return {
       "data": {
         "search": {

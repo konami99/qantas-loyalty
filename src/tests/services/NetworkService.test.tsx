@@ -6,7 +6,7 @@ describe('getProducts', () => {
   let result: ProductDetails;
 
   beforeEach(async () => {
-    result = await NetworkService.getProducts('https://fakestoreapi.com/products');
+    result = await NetworkService.getProducts();
   })
 
   it('should returns an array containing products', async () => {
