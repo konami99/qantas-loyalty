@@ -30,7 +30,7 @@ export default async function Home() {
                       src={ product.image ?? product.imageSrc }
                       alt="image"
                       width={200}
-                      height={200}
+                      height={300}
                     />
                   </div>
                   {

@@ -11,7 +11,7 @@ export class NetworkService {
             {
               "name": "Prohibition Liquor Company",
               "description": "Prohibition Christmas 500ml",
-              "image": "https://picsum.photos/200/300",
+              "image": "https://picsum.photos/200/300?a",
               "tag": "sale",
               "wasPrice": {
                 "cashPrice": {
@@ -35,7 +35,7 @@ export class NetworkService {
             {
               "name": "Royal Salute",
               "description": "Royal Salute 21 Year Old Blended Scotch Whisky Miami Polo Edition 700ml (Gift Box)",
-              "imageSrc": "https://picsum.photos/200/300",
+              "imageSrc": "https://picsum.photos/200/300?b",
               "tag": null,
               "currentPrice": {
                 "cashPrice": {
@@ -50,7 +50,7 @@ export class NetworkService {
             {
               "name": "Houraisen",
               "description": "Houraisen Beshi Tokubetsu Junmai Sake 720ml",
-              "image": "https://picsum.photos/200/300",
+              "image": "https://picsum.photos/200/300?c",
               "tag": "sale",
               "wasPrice": {
                 "cashPrice": {
@@ -74,7 +74,7 @@ export class NetworkService {
             {
               "name": "Aberlour",
               "description": "Aberlour 16 Year Old Double Cask Single Malt Scotch Whisky 700ml (Gift Tube)",
-              "imageSrc": "https://picsum.photos/200/300",
+              "imageSrc": "https://picsum.photos/200/300?d",
               "tag": null,
               "currentPrice": {
                 "cashPrice": {
