@@ -15,6 +15,8 @@ This project has been deployed to Vercel. URL: https://qantas-loyalty-theta.verc
 
 ![image](https://github.com/user-attachments/assets/360720fa-0845-4fa5-a425-30555fca9da5)
 
+2. Height of each product in mobile view is not consistent. It can be fixed.
+
 ## How to start
 
 ```
