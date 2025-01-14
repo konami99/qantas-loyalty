@@ -15,6 +15,22 @@ This project has been deployed to Vercel. URL: https://qantas-loyalty-theta.verc
 
 ![image](https://github.com/user-attachments/assets/360720fa-0845-4fa5-a425-30555fca9da5)
 
+## How to start
+
+```
+npm install
+npm run dev
+```
+
+## How to test
+
+```
+npm run test
+```
+
+![image](https://github.com/user-attachments/assets/a8cc1007-e508-40b2-99df-800e1b6108bf)
+
+
 ## Note
 
 This repo was cloned from my other account `richardchou89/qantas-loyalty`. I'm the author of `richardchou89/qantas-loyalty`. I needed to clone to konami99 to deploy to Vercel.
