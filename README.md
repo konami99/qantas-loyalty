@@ -14,3 +14,7 @@ This project has been deployed to Vercel. URL: https://qantas-loyalty-theta.verc
 1. Text truncate: currently it is a hard cut-off. I think it can be improved by using `overflow: hidden` so the text width adjusts dynamically depending on the width of the surrounding box.
 
 ![image](https://github.com/user-attachments/assets/360720fa-0845-4fa5-a425-30555fca9da5)
+
+## Note
+
+This repo was cloned from my other account `richardchou89/qantas-loyalty`. I'm the author of `richardchou89/qantas-loyalty`. I needed to clone to konami99 to deploy to Vercel.
